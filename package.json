@@ -2,15 +2,23 @@
   "name": "mydb",
   "version": "1.0.0",
   "description": "data collection for personal business",
-  "main": "app.js",
+  "author": "Bharath Devalla",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devallabharath/mydb.git"
+  },
+  "homepage": "https://github.com/devallabharath/mydb#readme",
+  "bugs": {
+    "url": "https://github.com/devallabharath/mydb/issues"
+  },
+  "main": "index.js",
   "scripts": {
     "test": "electron .",
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
-  "author": "Bharath Devalla",
-  "license": "UNLICENSED",
   "devDependencies": {
     "@electron-forge/cli": "^6.2.1",
     "@electron-forge/maker-deb": "^6.2.1",
@@ -21,7 +29,6 @@
     "electron": "^25.1.1"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.4.0",
     "electron-squirrel-startup": "^1.0.0"
   }
 }

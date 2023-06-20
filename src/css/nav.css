@@ -25,7 +25,7 @@ nav a {
     color: var(--Toggler);
 }
 
-nav a[active] {
+nav li[active] a {
     color: var(--TogglerHover);
 }
 

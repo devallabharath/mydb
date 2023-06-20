@@ -1,3 +1,5 @@
-@import url(root.css);
-@import url(header.css);
-@import url(nav.css);
+main {
+    margin-left: var(--nav-width);
+    /* background-color: #1c1c1c; */
+    padding: 15px;
+}

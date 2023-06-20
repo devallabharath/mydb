@@ -21,7 +21,7 @@ const createWindow = () => {
     // createMenu(win)
     themes()
 
-    win.loadFile('src/main.html')
+    win.loadFile('src/app.html')
 
 	win.on('closed', () => {
 		app.quit();
