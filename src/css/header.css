@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    padding: 10px .25rem;
+    user-select: none;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    color: var(--color);
+    height: var(--header-height);
+    background-color: var(--header-background);
+    -webkit-app-region: drag
+}
+
+/* Page Name */
+header> span[pageName] {
+    width: 100%;
+    font-weight: 500;
+    position: absolute;
+    text-align: center;
+}
+
+/* options */
+div[options] {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: left;
+    margin-right: 10px;
+    -webkit-app-region: no-drag;
+}
+
+span[themeToggler] {
+    display: grid;
+    cursor: pointer;
+    place-items: center;
+    grid-area: themeToggler;
+    color: var(--Toggler);
+}
+span[themeToggler]:hover {color: var(--TogglerHover)}
+span[themeToggler]> svg {height: 1rem}
+
+span[settingsToggler] {
+    display: grid;
+    cursor: pointer;
+    place-items: center;
+    grid-area: settingsToggler;
+    color: var(--Toggler);
+}
+span[settingsToggler]:hover {color: var(--TogglerHover)}
+span[settingsToggler]> svg {height: 1rem}
