@@ -14,14 +14,14 @@ const createWindow = () => {
 		titleBarStyle: 'hidden',
 		webPreferences: {
 			nodeIntegration: true,
-			preload: path.join(__dirname, 'load.js')
+			preload: path.join(__dirname, 'preload.js')
 		}
     })
 
     // createMenu(win)
     themes()
 
-    win.loadFile('app.html')
+    win.loadFile('src/main.html')
 
 	win.on('closed', () => {
 		app.quit();
