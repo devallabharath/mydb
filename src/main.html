@@ -7,8 +7,6 @@
     <script src="./lib/font-awesome.js"></script>
     <script src="./lib/include.js"></script>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/nav.css">
 </head>
 <body>
     <header>
@@ -19,7 +17,12 @@
         <span pageName>MyDB</span>
     </header>
     <nav>
-        <include src="./components/nav.html"></include>
+        <ul>
+            <li active><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
     <main></main>
     <script src="./js/header.js"></script>

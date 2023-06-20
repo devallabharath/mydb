@@ -1,0 +1,35 @@
+/* Define styles for nav */
+nav {
+    background-color: var(--nav-background);
+    width: var(--nav-width);
+    height: 100%;
+    position: fixed;
+}
+
+/* Define styles for nav list */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Define styles for nav list items */
+nav li {
+    margin: 10px 0;
+}
+
+/* Define styles for nav links */
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--Toggler);
+}
+
+nav a[active] {
+    color: var(--TogglerHover);
+}
+
+/* Define styles for nav links on hover */
+nav a:hover {
+    color: var(--TogglerHover);
+}

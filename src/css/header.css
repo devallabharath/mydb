@@ -10,6 +10,7 @@ header {
     color: var(--color);
     height: var(--header-height);
     background-color: var(--header-background);
+    border-bottom: solid 1px var(--background);
     -webkit-app-region: drag
 }
 

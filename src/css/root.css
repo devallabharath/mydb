@@ -1,0 +1,46 @@
+@font-face {
+    font-family: HFMonorita;
+    src: url(../assets/fonts/HFMonorita-Regular.ttf);
+}
+
+:root {
+    --font: HFMonorita;
+    --header-height: 40px;
+    --nav-width: 10rem;
+}
+
+* {box-sizing: border-box;}
+
+*[hidden] {display: none}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: var(--color);
+    background-color: var(--background);
+    font-family: var(--font);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color: #fefefe;
+        --header-background: #252525;
+        --nav-background: #252525;
+        --background: #1a1a1a;
+        --Toggler: #fafafa;
+        --TogglerHover: #feb923;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color: #1a1a1a;
+        --header-background: #dfdfdf;
+        --nav-background: #dfdfdf;
+        --background: #cecece;
+        --Toggler: #323232;
+        --TogglerHover: #2074bd;
+    }
+}
