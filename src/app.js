@@ -6,13 +6,18 @@ window.addEventListener('load', async () => {
     header = await import("./js/header.js")
     nav = await import("./js/nav.js")
 
+    // first things to do
     header._themeDefault()
 })
 
-async function Toggle (item) {
+// header toggle options
+// triggers from the app.html
+function Toggle (item) {
     item == "theme" ? header.themeToggle() : header.settingsToggle()
 }
 
-async function Navigate(loc){
+// side nav navigation
+// triggers from the app.html
+function Navigate(loc){
     nav.Navigate(loc)
 }

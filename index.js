@@ -13,7 +13,8 @@ const createWindow = () => {
 		// icon: 'app/assets/media/icon.ico',
 		titleBarStyle: 'hidden',
 		webPreferences: {
-			nodeIntegration: true,
+			nodeIntegration: false,
+            contextIsolation : true,
 			preload: path.join(__dirname, 'preload.js')
 		}
     })
