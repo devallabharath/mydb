@@ -2,3 +2,5 @@
 /package-lock.json
 /.env
 /.vscode
+/out
+.DS_Store

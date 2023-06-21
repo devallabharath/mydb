@@ -2,9 +2,14 @@
     font-family: HFMonorita;
     src: url(../assets/fonts/HFMonorita-Regular.ttf);
 }
+@font-face {
+    font-family: HFMonoritaBold;
+    src: url(../assets/fonts/HFMonorita-Bold.ttf);
+}
 
 :root {
     --font: HFMonorita;
+    --font-bold: HFMonoritaBold;
     --header-height: 40px;
     --nav-width: 10rem;
 }
@@ -21,6 +26,7 @@ body {
     color: var(--color);
     background-color: var(--background);
     font-family: var(--font);
+    letter-spacing: 0.5px;
 }
 
 @media (prefers-color-scheme: dark) {

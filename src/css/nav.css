@@ -27,6 +27,8 @@ nav a {
 
 nav li[active] a {
     color: var(--TogglerHover);
+    font-family: var(--font-bold);
+    font-size: large;
 }
 
 /* Define styles for nav links on hover */

@@ -17,7 +17,8 @@ header {
 /* Page Name */
 header> span[pageName] {
     width: 100%;
-    font-weight: 500;
+    font-family: var(--font-bold);
+    font-size: larger;
     position: absolute;
     text-align: center;
 }
