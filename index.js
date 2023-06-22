@@ -1,5 +1,5 @@
 const { app, BrowserWindow,ipcMain, nativeTheme, Menu } = require('electron')
-const path = require('path')
+// const path = require('path')
 
 const createWindow = () => {
     const win = new BrowserWindow({
@@ -13,9 +13,9 @@ const createWindow = () => {
 		// icon: 'app/assets/media/icon.ico',
 		titleBarStyle: 'hidden',
 		webPreferences: {
-			nodeIntegration: false,
-            contextIsolation : true,
-			preload: path.join(__dirname, 'preload.js')
+			nodeIntegration: true,
+            contextIsolation : false,
+			// preload: path.join(__dirname, 'preload.js')
 		}
     })
 

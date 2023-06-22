@@ -1,9 +1,9 @@
+const { ipcRenderer } = require("electron")
+
 const themeToggler = document.querySelector('span[themeToggler]')
 const settingsToggler = document.querySelector('span[settingsToggler]')
 
-
-
-export async function _themeDefault() {
+async function themeDefault() {
     const theme = localStorage.getItem('theme')
 
     if (!theme || theme == 'dark') {
@@ -15,12 +15,15 @@ export async function _themeDefault() {
         themeToggler.innerHTML = '<i class="fa-solid fa-moon"></i>'
         themeToggler.setAttribute('title', 'Dark Theme')
     }
+    toggle(theme ? theme : "dark")
 
-    await window.theme.default(theme ? theme : 'dark')
+    function toggle(t=null){
+        t == 'dark' ? ipcRenderer.invoke('theme:dark') : ipcRenderer.invoke('theme:light')
+    }
 }
 
-export async function themeToggle() {
-    const theme = await window.theme.toggle()
+async function themeToggle() {
+    const theme = ipcRenderer.invoke('theme:toggle')
     if (theme) {
         localStorage.setItem('theme', 'dark')
         themeToggler.innerHTML = '<i class="fa-solid fa-sun"></i>'
@@ -32,6 +35,12 @@ export async function themeToggle() {
     }
 }
 
-export function settingsToggle(){
+function settingsToggle(){
     console.log("settings toggled");
 }
+
+module.exports = {
+    themeDefault,
+    themeToggle,
+    settingsToggle,
+};

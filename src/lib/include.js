@@ -1,4 +1,6 @@
-document.addEventListener( "DOMContentLoaded", function () {
+document.addEventListener( "DOMContentLoaded", ()=>Include());
+
+function Include() {
     let e = document.getElementsByTagName( "include" );
     for ( var t = 0; t < e.length; t++ ) {
         let a = e[ t ];
@@ -11,4 +13,6 @@ document.addEventListener( "DOMContentLoaded", function () {
         .then( e => e.text() )
         .then( e => t( e ) );
     }
-});
+}
+
+module.exports = {Include}

@@ -4,22 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyDB</title>
-    <script src="./lib/include.js"></script>
+    <!-- <script src="./lib/include.js"></script> -->
     <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="./css/datatables.css">
 </head>
 <body>
     <header>
-        <include src="./components/header.html"></include>
+        <div options>
+            <span themeToggler></span>
+            <span settingsToggler title="open settings">
+                <i class="fa-solid fa-gear"></i>
+            </span>
+        </div>
+        <span pageName>MyDB</span>
     </header>
     <nav>
-        <include src="./components/nav.html"></include>
+        <ul>
+            <li home active><a href="javascript:Navigate('home')">Home</a></li>
+            <li loans><a href="javascript:Navigate('loans')">Loans</a></li>
+            <li customers><a href="javascript:Navigate('customers')">Customers</a></li>
+            <li waybills><a href="javascript:Navigate('waybills')">Waybills</a></li>
+            <li inventory><a href="javascript:Navigate('inventory')">Inventory</a></li>
+            <li workers><a href="javascript:Navigate('workers')">Workers</a></li>
+            <li admins><a href="javascript:Navigate('admins')">Admins</a></li>
+        </ul>
     </nav>
     <main>
-        <include src="./components/home.html"></include>
-        <include src="./components/about.html"></include>
-        <include src="./components/services.html"></include>
-        <include src="./components/contact.html"></include>
+        <div class='tableheaderdiv'>
+            <p class='tableheader'>Table</p>
+        </div>
+        <div id='tablebox'>
+            <table id="table" class="display">
+            </table>
+        </div>
     </main>
-</body>
     <script src="./app.js"></script>
+</body>
 </html>
