@@ -11538,7 +11538,7 @@
 		 *      } );
 		 *    } );
 		 */
-		"iTabIndex": 0,
+		"iTabIndex": 1,
 
 
 		/**
@@ -11711,7 +11711,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sPrevious": "Previous"
+				"sPrevious": "Prev"
 			},
 
 			/**
@@ -11734,7 +11734,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sEmptyTable": "No data available in table",
+			"sEmptyTable": "No data",
 
 
 			/**
@@ -11766,7 +11766,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
+			"sInfo": "_START_-_END_(_TOTAL_) ",
 
 
 			/**
@@ -11787,7 +11787,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sInfoEmpty": "Showing 0 to 0 of 0 entries",
+			"sInfoEmpty": "No Data",
 
 
 			/**
@@ -11809,7 +11809,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sInfoFiltered": "(filtered from _MAX_ total entries)",
+			"sInfoFiltered": "/(_MAX_)",
 
 
 			/**
@@ -11927,7 +11927,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sLengthMenu": "Show _MENU_ entries",
+			"sLengthMenu": "Show _MENU_",
 
 
 			/**

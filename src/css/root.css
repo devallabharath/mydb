@@ -37,6 +37,10 @@ body {
         --background: #1a1a1a;
         --Toggler: #fafafa;
         --TogglerHover: #feb923;
+        --table-border: #feb92355;
+        --tableRow-border: #feb92333;
+        --tableRow-odd: #ffffff08;
+        --tableBox-border: #aaa;
     }
 }
 
@@ -48,5 +52,9 @@ body {
         --background: #cecece;
         --Toggler: #323232;
         --TogglerHover: #2074bd;
+        --table-border: #2074bdaa;
+        --tableRow-border: #2074bd99;
+        --tableRow-odd: #00000011;
+        --tableBox-border: #555;
     }
 }

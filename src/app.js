@@ -1,10 +1,10 @@
-require("./lib/font-awesome.js")
 const {themeDefault, themeToggle, settingsToggle} = require("./js/header.js")
 const {Navigate} = require("./js/nav.js")
+require("./lib/font-awesome.js")
 const $ = require("jquery")
 const DataTable = require("./lib/datatables.js")(window, $)
-// require( 'datatables.net-responsive' );
-const axios = require("./lib/axios.js")
+require('./lib/datatables-select.js')(window, $)
+const axios = require("axios")
 
 // Dom Elements
 const themeToggler = document.querySelector('span[themeToggler]')
@@ -34,6 +34,7 @@ function Table(data){
         usrArray = []
         const {Id, Name, Mobile, Amount} = user
         Data.push([Id, Name, Mobile, Amount]);
+        Data.push([Id, Name, Mobile, Amount]);
     })
 
     // let table = new DataTable('#table', {
@@ -55,10 +56,14 @@ function Table(data){
             { title: "Name" },
             { title: "Mobile" },
             { title: "Amount" }],
-        // scrollY: '65vh',
-        select: true,
+        scrollY: '55vh',
+        select: {
+            info: true
+        },
         scrollCollapse: true,
+        "processing": true,
+        "deferRender": true,
         // responsive: true,
-        paging: true
+        paging: true,
     });
 }
